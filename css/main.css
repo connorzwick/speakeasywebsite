@@ -1,0 +1,127 @@
+@import "libs/reset.css";
+
+@font-face {
+  font-family: 'Apercu';
+  src: url("../fonts/Apercu_Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url("../fonts/Apercu_Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background-color: #DE5A5A;
+  color: white;
+  font-family: 'Apercu', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo_container {
+  margin-top: 0px;
+  margin-bottom: 36px;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.logo_text {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Apercu', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+p {
+  font-family: 'Apercu', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 36px;
+}
+
+.link_image {
+  width: 200px;
+  height: 57px;
+}
+
+.phone_container {
+  /*max-width: 100%;*/
+  max-width: 400px;
+}
+
+.phone {
+  width: 100%;
+}
+
+.container {
+  margin: 50px auto 0;
+  padding: 20px;
+  width: 100%;
+  max-width: 950px;
+}
+
+.container:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.section_left, .section_right {
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 1001px) {
+
+  body {
+    text-align: left;
+  }
+  
+  .logo_container {
+    margin-top: 200px;
+  }
+
+  .section_left {
+    width: 50%;
+    float: right;
+    margin-bottom: 0px;
+  }
+
+  .section_right {
+    width: 50%;
+    float: left;
+  }
+
+  .phone_container {
+    float: left;
+  }
+}
